@@ -15,6 +15,7 @@
 body {
     font-family: var(--font-main);
     line-height: 1.5;
+    color: var(--text-color);
 }
 
 a {
@@ -115,6 +116,32 @@ font-weight: 500;
     gap: 1.5rem;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1rem 0;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.125rem;
+}
+
+.about__title {
+    font-size: 2rem;
+}
+
+.about__text {
+   font-size: 1.125rem;
+}
+
+.about__image {
+    border-radius: 0.5rem;
+}
+
+
 
 @media (min-width: 1200px) {
   .header__logo {
@@ -142,5 +169,21 @@ font-weight: 500;
   }
   .hero__text {
     font-size: 1.5rem;
+  }
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5.25rem;
+    padding: 6rem 4.5rem 0;
+  }
+  .about__content {
+    flex: 1;
+    max-width: 42.875rem;
+  }
+  .about__title {
+    font-size: 3rem;
+  }
+  .about__image {
+    width: 31.25rem;
   }
 }
