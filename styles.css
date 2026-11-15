@@ -14,6 +14,7 @@
 
 body {
     font-family: var(--font-main);
+    line-height: 1.5;
 }
 
 a {
@@ -30,7 +31,6 @@ img {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
-    line-height: 1.5;
 }
 
 .header__links {
@@ -84,6 +84,38 @@ img {
     color: var(--white);
 }
 
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 5rem 1rem;
+}
+
+.hero__title {
+    font-size: 2rem;
+}
+
+.hero__text {
+max-width: 46.25rem;
+font-size: 1.125rem;
+font-weight: 500;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+}
+
+.hero__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
 @media (min-width: 1200px) {
   .header__logo {
     font-size: 3rem;
@@ -101,5 +133,14 @@ img {
     width: 9.8125rem;
     height: 3.5rem;
     font-size: 1.125rem;
+  }
+  .hero {
+    padding: 13.5rem 14.25rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__text {
+    font-size: 1.5rem;
   }
 }
