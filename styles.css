@@ -332,6 +332,10 @@ img {
   .cta__content {
     flex: 1;
   }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -435,6 +439,7 @@ img {
     gap: 13.625rem;
     margin-top: 6rem;
     padding: 3.75rem 5rem 10.3125rem;
+    justify-content: flex-start;
   }
   .footer__logo {
     font-size: 3rem;
